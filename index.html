@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>學習中心課程及報名管理系統 | Learning Center Courses and Enrollments Management System</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="The complete package for your course/enrollment administration">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    pre {
+        white-space: pre-wrap;
+    }
+  </style>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60065987-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-60065987-3');
+  </script>
+
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      name: '',
+      repo: '',
+      auto2top: true,
+      loadSidebar: true,
+      logo: '/images/dq-logo.png',
+      formatUpdated: '{YYYY}-{MM}-{DD}',
+
+      // complete configuration parameters
+      // for more options see https://docsify.js.org/#/plugins?id=full-text-search
+      search: {
+        maxAge: 86400000,
+        namespace: 'docs',
+        depth: 1,
+      },
+
+      // Footer
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span><a href="https://designquest.com.hk">Design Quest Limited</a> All rights reserved. <br>Contact Us <a href="mailto:info@designquest.com.hk">info@designquest.com.hk</a></span>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ]
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+
+  <!-- plugins -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+</body>
+</html>
