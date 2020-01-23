@@ -1,6 +1,7 @@
 # EdFun cPanel 使用說明
 
 歡迎來到 [EdFun cPanel](http://cpie.dq.hk/cpanel/) 使用說明文件。 此文檔向您展示如何使用 cPanel 管理 [EdFun](http://cpie.dq.hk) 網站的後台系統。
+**此文件的正式版本在此：https://cpie-com-hk.firebaseapp.com/**
 
 ![](images/27.jpg)
 
